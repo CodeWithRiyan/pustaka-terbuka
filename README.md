@@ -36,3 +36,7 @@ Open [http://localhost:3000](http://localhost:3000).
 ## Tech stack
 
 Next.js (App Router, static export), Tailwind CSS, shadcn/ui, Redux Toolkit with RTK Query.
+
+## Licence
+
+Code: MIT (see `LICENSE`). Book data and covers keep the terms of their sources (see the table above).
