@@ -34,6 +34,8 @@ interface DialogContentProps
   onClickOutside?: (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => void
   onClickClose?: (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void
   showClose?: boolean
+  /** Accessible name of the close button (translated by the caller). */
+  closeLabel?: string
   containerClassName?: string
   centered?: boolean
 }
@@ -50,6 +52,7 @@ const DialogContent = React.forwardRef<
       onClickOutside,
       onClickClose,
       showClose = true,
+      closeLabel = "Close",
       centered,
       ...props
     },
@@ -80,7 +83,7 @@ const DialogContent = React.forwardRef<
               className="ring-offset-background focus:ring-ring data-[state=open]:bg-accent data-[state=open]:text-muted-foreground absolute top-4 right-4 rounded-sm opacity-70 transition-opacity hover:opacity-100 focus:ring-2 focus:ring-offset-2 focus:outline-none disabled:pointer-events-none"
             >
               <X className="h-4 w-4" />
-              <span className="sr-only">Close</span>
+              <span className="sr-only">{closeLabel}</span>
             </DialogPrimitive.Close>
           )}
         </div>
