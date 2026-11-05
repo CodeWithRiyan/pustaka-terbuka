@@ -1,0 +1,12 @@
+[
+  {
+    "name": "All JavaScript of the site (every chunk, brotli)",
+    "path": "out/_next/static/chunks/**/*.js",
+    "limit": "340 kB"
+  },
+  {
+    "name": "CSS",
+    "path": "out/_next/static/css/*.css",
+    "limit": "10 kB"
+  }
+]

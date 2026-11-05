@@ -1,4 +1,8 @@
 dist
 node_modules
 .next
-build
+buildout
+coverage
+playwright-report
+test-results
+pnpm-lock.yaml
